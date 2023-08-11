@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:http/http.dart' as http;
 import 'package:quiz_appwrite/quiz_model.dart';
 
@@ -94,31 +95,31 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, top: 8.h, bottom: 8.h),
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(16.r),
                           color: Colors.green.shade200,
                         ),
                         alignment: Alignment.center,
-                        height: 80,
-                        width: double.maxFinite,
+                        height: 80.h,
+                        width: double.maxFinite.w,
                         child: Text(
                           quizes[currentQuestion].title,
-                          style: TextStyle(fontSize: 32),
+                          style: TextStyle(fontSize: 32.sp),
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 80.h,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, top: 8.h, bottom: 8.h),
                       child: SizedBox(
-                        height: 48,
-                        width: double.maxFinite,
+                        height: 48.h,
+                        width: double.maxFinite.w,
                         child: ElevatedButton(
                           onPressed: () {
                             setState(() {
@@ -127,17 +128,17 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Text(
                             quizes[currentQuestion].option1,
-                            style: TextStyle(fontSize: 24),
+                            style: TextStyle(fontSize: 24.sp),
                           ),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, top: 8.h, bottom: 8.h),
                       child: SizedBox(
-                        height: 48,
-                        width: double.maxFinite,
+                        height: 48.h,
+                        width: double.maxFinite.w,
                         child: ElevatedButton(
                           onPressed: () {
                             setState(() {
@@ -146,16 +147,16 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Text(
                             quizes[currentQuestion].option2,
-                            style: TextStyle(fontSize: 24),
+                            style: TextStyle(fontSize: 24.sp),
                           ),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, top: 8.h, bottom: 8.h),
                       child: SizedBox(
-                        height: 48,
+                        height: 48.h,
                         width: double.maxFinite,
                         child: ElevatedButton(
                           onPressed: () {
@@ -165,16 +166,16 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Text(
                             quizes[currentQuestion].option3,
-                            style: TextStyle(fontSize: 24),
+                            style: TextStyle(fontSize: 24.sp),
                           ),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 8, bottom: 8),
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, top: 8.h, bottom: 8.h),
                       child: SizedBox(
-                        height: 48,
+                        height: 48.h,
                         width: double.maxFinite,
                         child: ElevatedButton(
                           onPressed: () {
@@ -184,7 +185,7 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Text(
                             quizes[currentQuestion].option4,
-                            style: TextStyle(fontSize: 24),
+                            style: TextStyle(fontSize: 24.sp),
                           ),
                         ),
                       ),
